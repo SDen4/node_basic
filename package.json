@@ -4,7 +4,9 @@
   "description": "test study project",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node demo/server.js",
+    "dev": "nodemon demo/server.js"
   },
   "keywords": [
     "node.js"
