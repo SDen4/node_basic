@@ -36,6 +36,21 @@ fs.appendFile(filePath, '\nAddition text to new row.', (err) => {
   console.log('File has been changed');
 });
 
+// чтение из файла - v1
+fs.readFile(filePath, (err, content) => {
+  if (err) throw err;
+
+  const textFromFile = Buffer.from(content).toString();
+  console.log('text from file: ', textFromFile);
+});
+
+// чтение из файла - v2
+fs.readFile(filePath, 'utf-8', (err, content) => {
+  if (err) throw err;
+
+  console.log('text from file: ', content);
+});
+
 // node demo/fs
 
 // NOTES
