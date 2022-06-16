@@ -1,0 +1,21 @@
+{
+  "name": "nodestudy",
+  "version": "1.0.0",
+  "description": "test study project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "Denis Skryabin",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "type": "module"
+}
