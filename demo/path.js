@@ -24,4 +24,9 @@ console.log('resolve error example: ', path.resolve('fir', '/sec', 'thrd')); // 
 const name = path.parse(__filename).name;
 console.log('Name: ', name);
 
+// url
+const someUrl = 'https://localhost:8000/users?id=4334';
+const url = new URL(someUrl);
+console.log('url: ', url);
+
 // node demo/path
