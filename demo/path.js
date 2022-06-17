@@ -16,6 +16,10 @@ console.log(path.join(__dirname, 'first', 'second', 'third'));
 console.log(path.join(__dirname, '..'));
 console.log(path.join(__dirname, '..', '..'));
 
+// path resolve - return absolute path
+console.log('resolve example: ', path.resolve('fir', 'sec', 'thrd'));
+console.log('resolve error example: ', path.resolve('fir', '/sec', 'thrd')); // using "/" returns error
+
 // get name example
 const name = path.parse(__filename).name;
 console.log('Name: ', name);
