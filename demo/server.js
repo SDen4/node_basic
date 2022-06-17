@@ -30,7 +30,9 @@ const server = http.createServer((req, res) => {
 const PORT = process.env.PORT || 3003;
 
 server.listen(PORT, () => {
-  console.log(`Server's been started on the ${PORT} port.`);
+  console.log(
+    `Server's been started on the ${PORT} port. Open: http://localhost:3003`,
+  );
 });
 
 // npm run dev
