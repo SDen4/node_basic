@@ -13,6 +13,9 @@ fs.mkdir(path.join(__dirname, 'test'), (error) => {
   console.log('Fold has been created');
 });
 
+// создание нескольких вложенных директорий
+fs.mkdirSync(path.resolve(__dirname, 'in1', 'in2', 'in3'), { recursive: true });
+
 // создание нового файла
 const filePath = path.join(__dirname, 'test', 'test.txt');
 
