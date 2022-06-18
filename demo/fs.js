@@ -59,6 +59,11 @@ fs.rmdir(path.resolve(__dirname, 'test'), (err) => {
   if (err) throw err;
 });
 
+// удаление файла
+fs.rm(path.resolve(__dirname, 'test.txt'), (err) => {
+  if (err) throw err;
+});
+
 // node demo/fs
 
 // NOTES
