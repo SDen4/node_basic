@@ -54,6 +54,11 @@ fs.readFile(filePath, 'utf-8', (err, content) => {
   console.log('text from file: ', content);
 });
 
+// удаление директории
+fs.rmdir(path.resolve(__dirname, 'test'), (err) => {
+  if (err) throw err;
+});
+
 // node demo/fs
 
 // NOTES
