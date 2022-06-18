@@ -34,4 +34,14 @@ stream.on('end', () => console.log('end of reading'));
 stream.on('open', () => console.log('start of reading'));
 stream.on('error', (error) => console.log(error)); // !!!
 
+// 2. Writable - запись
+const writableStream = fs.createWriteStream(
+  path.resolve(__dirname, 'mock', 'resultOfWritableStream.txt'),
+);
+
+for (let i = 0; i < 100; i++) {
+  writableStream.write(i + '\n');
+}
+writableStream.end();
+
 // node demo/streams
