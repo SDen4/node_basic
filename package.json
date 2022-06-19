@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test",
     "start": "node demo/server.js",
-    "dev": "nodemon demo/server.js"
+    "dev": "nodemon demo/framework/server_v2.js"
   },
   "keywords": [
     "node.js"
