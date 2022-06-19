@@ -5,7 +5,18 @@ import Application from './Application.js';
 const application = new Application();
 const router = new Router();
 
-router.get('/users', (req, res) => res.end('you send request to /users'));
+const users = [
+  { id: 1, name: 'LKJsdl' },
+  { id: 2, name: 'KJsdlf' },
+  { id: 3, name: 'Jsdlfk' },
+  { id: 4, name: 'sdlfkj' },
+  { id: 5, name: 'lfkjds' },
+];
+
+router.get('/users', (req, res) => {
+  res.writeHead(200, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify(users));
+});
 router.get('/posts', (req, res) => res.end('you send request to /posts'));
 
 application.addRouter(router);
