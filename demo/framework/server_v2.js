@@ -17,7 +17,7 @@ router.get('/users', (req, res) => {
   res.writeHead(200, { 'Content-Type': 'application/json' });
   res.end(JSON.stringify(users));
 });
-router.get('/posts', (req, res) => res.end('you send request to /posts'));
+router.post('/posts', (req, res) => res.end('you send request to /posts'));
 
 application.addRouter(router);
 
